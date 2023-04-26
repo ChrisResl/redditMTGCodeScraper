@@ -113,8 +113,20 @@ def find_word_in_text(word, text):
         """
         return word in text.lower()
 
+def log_file(filepath):
+    """Writting to log file that script executed
+    Args:
+        filepath: string
+    """
+    with open(filepath, "a") as f:
+        now = datetime.datetime.now()
+        f.write(f'Script executed at {now}\n')
+        f.close()
+
         
 if __name__ == '__main__':
+    log_file("/home/chris/Workspace/redditMTGCodeScrapper/log_file.txt")
+
     csvExist = SubredditScrapper.check_file_exist("./mtg_arena_code_links.csv")
     if not csvExist:
         SubredditScrapper.create_output_file("./mtg_arena_code_links.csv")
