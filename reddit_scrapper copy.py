@@ -10,7 +10,7 @@ reddit = praw.Reddit()
 
 class SubredditScrapper:
 
-    def __init__(self, sub, sort='new', lim = 50):
+    def __init__(self, sub, sort='new', lim = 10):
         """Constructor
         Args:
             sort: category of the subreddit where scraping occurs
