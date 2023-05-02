@@ -14,7 +14,7 @@ Choose a name (eg. magicbot) and select "script". For "redirect uri" set ```http
 
 * Clone the repository
 * Setup of environment <br />
-```conda create -n python=3.11.3 redditMTGCodeScrapper pip```<br />
+```conda create -n python=3.11.3 redditMTGCodeScraper pip```<br />
 ```pip install -r requirements.txt```
 
 * In Telegram, initiate a conversation with your bot by typing ```/start```
@@ -23,8 +23,8 @@ Choose a name (eg. magicbot) and select "script". For "redirect uri" set ```http
 * Complete the praw.ini file with your reddit account and script information
 * Setup of ```cron``` to schedule script <br />
 In terminal: ```crontab -e``` <br />
-```*/1 * * * * cd <path-to-project-directory> && source <path-to-conda-activate-file> <environment-name>; <path-to-conda-python> <path-to-reddit-scrapper.py-file>``` <br /> Example: <br />
-```*/1 * * * * cd /home/chris/Workspace/redditMTGCodeScrapper && source /home/chris/anaconda3/bin/activate redditMTGCodeScrapper; /home/chris/anaconda3/envs/redditMTGCodeScrapper/bin/python /home/chris/Workspace/redditMTGCodeScrapper/reddit_scrapper.py```
+```*/1 * * * * cd <path-to-project-directory> && source <path-to-conda-activate-file> <environment-name>; <path-to-conda-python> <path-to-reddit-scraper.py-file>``` <br /> Example: <br />
+```*/1 * * * * cd /home/chris/Workspace/redditMTGCodeScraper && source /home/chris/anaconda3/bin/activate redditMTGCodeScraper; /home/chris/anaconda3/envs/redditMTGCodeScraper/bin/python /home/chris/Workspace/redditMTGCodeScraper/reddit_scrapper.py```
 
 * To check if everything is working as intended, a log file was included, reporting at which times the script has been executed.
 
