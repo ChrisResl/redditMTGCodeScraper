@@ -35,4 +35,5 @@ Example: <br />
 * Requests==2.29.0
 
 ##  Endresult
-![Alt Text](./images/example1.jpeg){width=50%} ![Alt Text](./images/example2.jpeg){width=50%} 
+
+<img src="./images/example1.jpeg" alt="Alt text" width="200" height="200"> <img src="./images/example2.jpeg" alt="Alt text" width="200" height="200"> 
