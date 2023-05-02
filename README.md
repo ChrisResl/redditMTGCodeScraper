@@ -34,4 +34,5 @@ Example: <br />
 * praw==7.7.0
 * Requests==2.29.0
 
-##  What app looks like, picture of codes on phone
+##  Endresult
+![plot](./images/example1.jpeg)
