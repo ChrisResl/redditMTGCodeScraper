@@ -30,7 +30,8 @@ Example: <br />
 ```*/1 * * * * cd /home/chris/Workspace/redditMTGCodeScrapper && source /home/chris/anaconda3/bin/activate redditMTGCodeScrapper; /home/chris/anaconda3/envs/redditMTGCodeScrapper/bin/python /home/chris/Workspace/redditMTGCodeScrapper/reddit_scrapper.py```
 
 ## Dependencies
-* Node
-* Express
+* pandas==2.0.1
+* praw==7.7.0
+* Requests==2.29.0
 
 ##  What app looks like, picture of codes on phone
