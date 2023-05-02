@@ -35,4 +35,4 @@ Example: <br />
 * Requests==2.29.0
 
 ##  Endresult
-![plot](./images/example1.jpeg)
+![plot](./images/example1.jpeg) ![plot](./images/example2.jpeg)
