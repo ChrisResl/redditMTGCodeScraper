@@ -15,6 +15,9 @@ highlight what it does?
 ## How to setup the script
 explanation
 
+```conda create -n python=3.11.3 yourenv pip```
+```pip install -r requirements.txt```
+
 * Clone the repository
 
 * Install all dependencies usig the npm i command??
