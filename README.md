@@ -35,4 +35,4 @@ Example: <br />
 * Requests==2.29.0
 
 ##  Endresult
-![plot](./images/example1.jpeg width="60%" height="30%") ![plot](./images/example2.jpeg width="60%" height="30%")
+![plot](./images/example1.jpeg){:height="50%" width="50%"} ![plot](./images/example2.jpeg){:height="50%" width="50%"}
