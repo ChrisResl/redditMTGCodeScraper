@@ -9,7 +9,7 @@ This tool utilizes the Praw framework to scrape the MTG Arena subreddit for rede
 
 * Create a Telegram bot: https://sendpulse.com/knowledge-base/chatbot/telegram/create-telegram-chatbot <br />
    Note the token.
-* Create a Reddit app under https://www.reddit.com/prefs/apps
+* Create a Reddit app under https://www.reddit.com/prefs/apps <br />
 Choose a name (eg. magicbot) and select "script". For "redirect uri" set ```http://localhost:8080``
 
 * Clone the repository
