@@ -8,7 +8,7 @@ import datetime
 # Get credentials from DEFAULT instance in praw.ini
 reddit = praw.Reddit()
 
-class SubredditScrapper:
+class SubredditScraper:
 
     def __init__(self, sub, sort='new', lim = 10):
         """Constructor
@@ -125,16 +125,16 @@ def log_file(filepath):
 
         
 if __name__ == '__main__':
-    log_file("/home/chris/Workspace/redditMTGCodeScrapper/log_file.txt")
+    log_file("./log_file.txt")
 
-    csvExist = SubredditScrapper.check_file_exist("./mtg_arena_code_links.csv")
+    csvExist = SubredditScraper.check_file_exist("./mtg_arena_code_links.csv")
     if not csvExist:
-        SubredditScrapper.create_output_file("./mtg_arena_code_links.csv")
-        checkedPosts = SubredditScrapper.read_in_csv("./mtg_arena_code_links.csv")
+        SubredditScraper.create_output_file("./mtg_arena_code_links.csv")
+        checkedPosts = SubredditScraper.read_in_csv("./mtg_arena_code_links.csv")
     else:
-        checkedPosts = SubredditScrapper.read_in_csv("./mtg_arena_code_links.csv")
+        checkedPosts = SubredditScraper.read_in_csv("./mtg_arena_code_links.csv")
 
-    newPosts = SubredditScrapper('MagicArena').get_relevant_posts(checkedPosts)
+    newPosts = SubredditScraper('MagicArena').get_relevant_posts(checkedPosts)
 
-    SubredditScrapper.write_posts_to_csv(newPosts)
-    SubredditScrapper.send_message_to_telegram(newPosts)
+    SubredditScraper.write_posts_to_csv(newPosts)
+    SubredditScraper.send_message_to_telegram(newPosts)
