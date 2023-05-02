@@ -36,4 +36,4 @@ Example: <br />
 
 ##  Endresult
 
-<img src="./images/example1.jpeg" alt="Alt text" width="200" height="200"> <img src="./images/example2.jpeg" alt="Alt text" width="200" height="200"> 
+<img src="./images/example1.jpeg" alt="Alt text" width="400" height="600"> <img src="./images/example2.jpeg" alt="Alt text" width="400" height="600"> 
