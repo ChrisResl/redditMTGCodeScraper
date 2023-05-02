@@ -15,12 +15,17 @@ highlight what it does?
 ## How to setup the script
 explanation
 
-```conda create -n python=3.11.3 yourenv pip```
-```pip install -r requirements.txt```
-
 * Clone the repository
+* Setup of environment
+```conda create -n python=3.11.3 redditMTGCodeScrapper pip```
+```pip install -r requirements.txt```
+* Fill in required information
 
-* Install all dependencies usig the npm i command??
+* Setup of ```cron``` to schedule script
+In terminal: ```crontab -e```
+```*/1 * * * * cd <path-to-project-directory> && source <path-to-conda-activate-file> <environment-name>; <path-to-conda-python> <path-to-reddit-scrapper.py-file>```
+
+Example: ```*/1 * * * * cd /home/chris/Workspace/redditMTGCodeScrapper && source /home/chris/anaconda3/bin/activate redditMTGCodeScrapper; /home/chris/anaconda3/envs/redditMTGCodeScrapper/bin/python /home/chris/Workspace/redditMTGCodeScrapper/reddit_scrapper.py```
 
 ## Dependencies
 * Node
