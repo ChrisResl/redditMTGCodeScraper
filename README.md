@@ -16,16 +16,17 @@ highlight what it does?
 explanation
 
 * Clone the repository
-* Setup of environment
-```conda create -n python=3.11.3 redditMTGCodeScrapper pip```
+* Setup of environment <br />
+```conda create -n python=3.11.3 redditMTGCodeScrapper pip```<br />
 ```pip install -r requirements.txt```
 * Fill in required information
 
 * Setup of ```cron``` to schedule script <br />
 In terminal: ```crontab -e``` <br />
+
 ```*/1 * * * * cd <path-to-project-directory> && source <path-to-conda-activate-file> <environment-name>; <path-to-conda-python> <path-to-reddit-scrapper.py-file>```
 
-Example: 
+Example: <br />
 ```*/1 * * * * cd /home/chris/Workspace/redditMTGCodeScrapper && source /home/chris/anaconda3/bin/activate redditMTGCodeScrapper; /home/chris/anaconda3/envs/redditMTGCodeScrapper/bin/python /home/chris/Workspace/redditMTGCodeScrapper/reddit_scrapper.py```
 
 ## Dependencies
