@@ -2,7 +2,7 @@
 
 ## A script for detecting redeemable codes posted on the Magic Arena subreddit and sent to your mobile phone
 
-This tool utilizes the Praw framework to scrape the MTG Arena subreddit for redemption codes that can be used in the game's store. The script is designed to monitor the subreddit every minute and only report codes that have not already been reported that day, as older ones will already be redeemed and are no longer relevant. To automate this process, scheduling is achieved through the use of a cron script.
+This tool utilizes the Praw framework to scrape the MTG Arena subreddit for redeemable codes that can be used in the game's store. The script is designed to monitor the subreddit every minute and only report codes that have not already been reported that day, as older ones will already be redeemed and are no longer relevant. To automate this process, scheduling is achieved through the use of a cron script.
 
 
 ## Setup
